@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고량주</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <span class="title">고량주</span>
+    </header>
+    <main>
+        <div class="sidebar" id="sidebar">
+            <button class="addButton" id="addItem">추가</button>
+            <span>소주</span>
+            <span>맥주</span>
+            <span>샴페인</span>
+            <span>와인</span>
+            <span>럼</span>
+        </div>
+        <section class="container" id="container">
+            <div class="card">
+                <img src="./images/soju.png" alt="소주" />
+                <span>소주 좋아요!</span>
+            </div>
+            <div class="card">
+                <img src="./images/beer.jpg" alt="맥주" />
+                <span>맥주는 조금 먹어도 배불러서 싫어요</span>
+            </div>
+            <div class="card">
+                <img src="./images/champagne.jpg" alt="샴페인" />
+                <span>샴페인 한번 먹어보고 싶다!</span>
+            </div>
+            <div class="card">
+                <img src="./images/rum.jpg" alt="럼" />
+                <span>럼도 먹어보고 싶다!</span>
+            </div>
+            <div class="card">
+                <img src="./images/wine.jpg" alt="와인" />
+                <span>와인 입문하고 싶다!</span>
+            </div>
+
+        </section>
+
+        <div class="modalBackground" id="modal">
+            <form class="modal" id="addItemForm">
+                <span class="modalClose" id="closeModal">X</span>
+                <label for="name" class="label">이름</label>
+                <input id="name" type="text" class="modalInput" placeholder="오레오 와인" />
+
+                <label for="image" class="label">이미지</label>
+                <input id="image" type="text" class="modalInput" placeholder="URL" />
+
+                <label for="content" class="label">내용</label>
+                <input id="content" type="text" class="modalInput" placeholder="오레오를 잘게 썰어 만들어요" />
+
+                <button class="saveButton" id="saveItem">저장하기</button>
+            </form>
+
+        </div>
+    </main>
+
+    <script src="./addItem.js"></script>
+    <script src="./modal.js"></script>
+</body>
+
+</html>
